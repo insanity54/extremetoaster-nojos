@@ -1,0 +1,8 @@
+{
+    "env": {
+        "PGUSER": "user",
+        "PGPASSWORD": "password",
+        "PGDATABASE": "nojos",
+        "PGHOST": "localhost"
+    }
+}

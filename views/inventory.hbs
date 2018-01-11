@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <title>NOJOS | {{title}}</title>
+<style>
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav article altnav"
+      "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 15%;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+  }
+  header, footer, article, nav, div {
+    padding: 20px;
+    background: gold;
+  }
+  #pageHeader {
+    grid-area: header;
+  }
+  #pageFooter {
+    grid-area: footer;
+  }
+  #mainArticle {
+    grid-area: article;
+    }
+  #mainNav {
+    grid-area: nav;
+    }
+  #altNav {
+    grid-area: altnav;
+    }
+  #grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    }
+  #grid > div {
+    font-size: 5vw;
+    padding: .5em;
+    background: gold;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <header id="pageHeader">Header</header>
+  <article id="mainArticle">Article</article>
+  <nav id="mainNav">Nav</nav>
+  <div id="siteAds">altnav</div>
+  <footer id="pageFooter">Footer</footer>
+  {{{contents}}}
+</body>
+</html>
